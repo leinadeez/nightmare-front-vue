@@ -24,7 +24,7 @@ export default new Vuex.Store({
   actions: { 
     getPosts({commit}) {
       commit('SET_LOADING', true)
-      axios.get('/api/').then((response) => {
+      axios.get('http://192.168.0.16:3000/posts').then((response) => {
         commit('UPDATE_POSTS', response.data)
         commit('SET_LOADING', false)
       });
