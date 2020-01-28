@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-     <router-view/>
+    <incredible-menu />
+    <router-view/>    
   </div>
 </template>
 
 <script>
+import IncredibleMenu from '@/views/menu/menu'
+
 export default {
   name: 'App',
   created() {
     this.$store.dispatch('getPosts')
-  }  
+  },
+  components: {
+    'incredible-menu' : IncredibleMenu
+  }
 }
 </script>
 

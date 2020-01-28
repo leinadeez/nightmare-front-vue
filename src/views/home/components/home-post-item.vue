@@ -8,9 +8,7 @@
             <li><button type="submit" v-on:click.prevent="editThis(post._id)">Edit</button></li>
             <li><button type="submit" v-on:click.prevent="deleteThis(post._id)">Delete this!!!!</button></li>
 
-        </ul>
-        
-        
+        </ul>        
     </div>
 </template>
 <script>
@@ -28,7 +26,7 @@ export default {
     methods: {
         deleteThis(id) {
             console.log("deletando:", id)
-            axios.delete('/api/posts/'+id)
+            axios.delete('http://192.168.0.16:3000/posts/'+id)
                 .then((response) => {
                     console.log("Post deletado!", response)
                     location.reload()
