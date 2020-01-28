@@ -1,0 +1,23 @@
+body {
+    background-color: $default-bg;
+}
+
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: justify;
+    color: $font-color;
+    a {
+        color: $font-color;
+        text-decoration: underline;
+    }
+    button {
+        border: 1px solid $border-color;
+        border-radius:5px;
+        background-color: $secondary-bg;
+        color:$font-color;
+    }
+}
+  
