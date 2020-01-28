@@ -1,8 +1,10 @@
 <template>
-    <div class="home">
-        <article>
-            <home-post-item v-for="post in posts" :key="post._id" :post="post" />
-        </article>
+    <div class="container">
+        <div class="home row">
+            <article class=".col-8">
+                <home-post-item v-for="post in posts" :key="post._id" :post="post" />
+            </article>
+        </div>
     </div>
 </template>
 

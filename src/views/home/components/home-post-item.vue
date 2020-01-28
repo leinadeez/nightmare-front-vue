@@ -23,7 +23,7 @@ export default {
     methods: {
         deleteThis(id) {
             console.log("deletando:", id)
-            axios.delete('http://192.168.0.16:3000/posts/'+id)
+            axios.delete('/api/posts/'+id)
                 .then((response) => {
                     console.log("Post deletado!", response)
                     location.reload()

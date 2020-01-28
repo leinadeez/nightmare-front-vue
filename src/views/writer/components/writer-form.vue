@@ -24,7 +24,7 @@ export default {
     methods: {
         submitPost(event) {
             event.preventDefault()
-            axios.post('http://192.168.0.16:3000/posts', {
+            axios.post('/api/posts', {
                 "title": this.postTitle,
                 "subtitle": this.postSubtitle,
                 "content": this.postContent,
