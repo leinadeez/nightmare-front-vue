@@ -1,7 +1,10 @@
 <template>
     <div class="container">
+        <div class="row">
+            <h1>Timeline</h1>
+        </div>
         <div class="home row">
-            <article class=".col-8">
+            <article class=".col-8s">
                 <home-post-item v-for="post in posts" :key="post._id" :post="post" />
             </article>
         </div>
@@ -24,6 +27,5 @@ export default {
     }
 }
 </script>
-<style scoped>
-
+<style lang="scss">
 </style>
